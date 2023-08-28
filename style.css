@@ -1,0 +1,469 @@
+   
+@media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  html {
+    width: 100%;
+    height: 4000px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  body {
+    margin: 0;
+    background-color: #eae4e0;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+  }
+  .logo {
+    
+  }
+  .nav-bar {
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    border: 1px solid rgb(219, 217, 217); 
+    transition: top 0.3s;
+    position: fixed;
+    background-color: #f9f9f9; 
+    z-index: 11;
+    justify-content: space-around;
+    align-items: center;
+    /*background-image: linear-gradient( to top, transparent 10%, #52655e, #52655e);*/
+  }
+  #menunav {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .mediasimg {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+  }
+  #igimg, #emailimg, #whatimg {
+    width: 30px;
+    padding-left: 30px;
+  }
+  nav.hidden {
+    top: -160px; /* Move o menu para cima para escondê-lo */
+  }
+  .logo img {
+    width: 280px;
+  }
+  .nav ul {
+    margin-top: 30px;
+    display: flex;
+    margin-left: -100px;
+  }
+  .nav ul li {
+    display: flex;
+    list-style: none;
+    font-size: 12pt;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif; 
+  }
+  a {
+    text-decoration: none;
+    color: #b5916d;
+  }
+  a:hover {
+    color: #4b4137;
+  }
+  #sobremim {
+    /*scroll-padding: 15rem;*/
+    padding-top: 80px;
+    display: flex;
+    justify-content: flex-start;
+    width:100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-image: url('./assets/fotobackgroundmarcadagua.webp');
+    background-position: right; 
+    background-color: rgb(153, 164, 145);
+    background-attachment: fixed;
+  }   
+  .about {
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    width: 500px;
+    height: 80%;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: rgba(182, 187, 177, 0.473);
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+  }
+  .about p {
+    display: flex;
+    justify-content: center;
+
+  }
+  #home {
+    height: 800px;
+    width: 100%;
+    background-image: url('./assets/Patricia-Branco-7v2.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+  }
+  #depoimentos {
+    width: 100%;
+    height: 800px;
+    background-image: url('./assets/depoimentos.webp');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #areaatuacao {
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 100%;
+    background-color: rgb(131, 137, 132);
+    padding-top: 40px; 
+  }
+  #ginecoimg,  #obsteimg, #esteticaimg {
+    min-width: 300px;
+    max-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgba(217, 216, 216, 0.592);
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 40px;
+    justify-content: space-between;
+  }
+  #areatitle {
+    background-color: #ad7b5a;
+    color: #f7f6f4;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #ginecoimg {
+    background-image: url('./assets/ginecologiaCompactada.webp');
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+  #obsteimg {
+    background-image: url('./assets/obstetriciaCompactada.webp');
+    border-radius: 50%;
+    /*filter: saturate(10%);*/
+    opacity: 0.3;
+  } 
+  #esteticaimg {
+    background-image: url('./assets/esteticaintimaCompactada.webp');
+    border-radius: 50%;
+    opacity: 0.3;
+  } 
+  #ginecoimg:hover, #obsteimg:hover, #esteticaimg:hover {
+    box-shadow: 1px 1px 13px 4px rgba(215, 215, 215, 0.639);
+    transition: .4s;
+    opacity: 1;
+  }
+  #title {
+    color: rgb(6, 6, 6);
+    font-weight: bolder;
+    font-size: 16pt;
+    height: 10px;
+  }
+  #contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #f9f9f9;
+    /*background-image: url('./assets/Patricia-Branco-7v2.png');*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    max-width: 600px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+  }
+  textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  #contatoclinicas h2 {
+    display: flex;
+    justify-content: center;
+  }
+  #clinicas {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+  }
+  #cli1, #cli2, #cli3 {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-size: 12pt;
+  }
+  #cli1 span, #cli2 span, #cli3 span {
+    font-weight: bolder;
+  }
+  #endereco {
+    display: flex;
+    flex-direction: column;
+    font-size: 10pt;
+    padding: 10px;
+    font-weight: lighter;
+    margin-top: 20px;
+  }
+  #endereco span {
+    padding: 5px;
+  }
+  .btnwhatsapp {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  .btnwhatsapp img {
+    width: 60px
+  }
+
+  /*
+  .btnwhatsapp button {
+    background-color: #5edf65;
+    width: 100px;
+    height: 30px;
+    color: rgb(249, 249, 247);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .btnwhatsapp button:hover {
+    background-color: #1fc127;
+  }
+  */
+  #separador {
+    width: 1px;
+    height: 300px;
+    border: 0.1px solid rgb(7, 7, 7);
+  }
+  #logocli1 img {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+  #logocli2 img {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+  #logocli3 img {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    padding-left: 50px;
+    padding-top: 40px;
+  }
+  #mapa {
+    width: 100%;
+    border: 1px solid rgb(190, 188, 188);
+    background-color: #f9f9f9;
+    height: 500px;
+  }
+  .footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: #ad7b5a;
+    /*background-image: linear-gradient( to bottom, transparent 43%, #d7cac2);*/ 
+  }
+  #logov2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #logov2 img {
+    display: flex;
+    width: 140px;
+    padding: 10px;
+  }
+  #copyright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10pt;
+    font-weight: lighter;
+  }
+  #mapa {
+    background-image: url('./assets/mapa.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @media screen and (max-width:768px) {
+    
+    html {
+      min-width: 360px;
+      height: 4000px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body {
+      margin: 0;
+      background-color: #eae4e0;
+      width: 100%;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width:100%;
+    }
+    
+    .nav-bar {
+      display: flex;
+      top: 0;
+      left: 0;
+      height: 100px;
+      width: 100%;
+      border: 1px solid rgb(219, 217, 217); 
+      transition: top 0.3s;
+      position: fixed;
+      background-color: #f9f9f9; 
+      z-index: 11;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      /*background-image: linear-gradient( to top, transparent 10%, #52655e, #52655e);*/
+    }
+    
+    .nav ul {
+      display: none;
+    } 
+    .mediasimg {
+      display: none;
+      
+    }
+    .logo {
+      margin: 0;
+      margin-left: -50px;
+    }
+    #home {
+      height: 800px;
+      width: 100%;
+      background-image: url('./assets/Patricia-Branco-7v2.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 200px;
+    }
+    #contato, #container, #clinicas {
+      display: flex;
+      flex-direction: column;
+      max-width: 768px;
+    }
+    #separador {
+      display: none;
+    }
+    #areaatuacao {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 1500px;
+      max-width: 768px;
+    }
+    #ginecoimg,  #obsteimg, #esteticaimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:cover;
+      border: 1px solid rgba(217, 216, 216, 0.592);
+      height: 1000px;
+      max-width: 100px;
+    }
+    .menu-toggle {
+      display: flex;
+    }
+    .about {
+      padding: 5px;
+      border-radius: 5px;
+      display: flex;
+      width: 400px;
+      height: 80%;
+      min-width: 300px;
+      max-width: 500px;
+      background-color: rgba(182, 187, 177, 0.473);
+      margin-left: 30px;
+      margin-top: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      justify-content: center;
+    }
+    #logocli2 img {
+      padding-left: 50px;
+    }    
+    #logocli3 img {
+      padding-left: 80px;
+    }
+    .mobile-menu {
+      display: block;
+    }
+    .menu {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .menu li {
+      margin: 0;
+    }
+  
+    .menu a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+    }
+  }
